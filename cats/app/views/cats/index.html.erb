@@ -1,0 +1,17 @@
+<h1>All the Cats</h1>
+
+<ul>
+  <li>
+    <% @cats.each do |cat|%>
+      <ul>
+        <li>Name: <%= cat.name%></li>
+        <li>Color: <%= cat.color%></li>
+        <li>Birth date: <%= cat.birth_date%></li>
+        <li>Sex: <%= cat.sex%></li>
+        <li>Description: <%= cat.description%></li>
+        <li>
+          <a href="<%= cat_url(cat.id) %>">Check me out!</a>
+      </ul>
+    <% end %>
+  </li>
+</ul>

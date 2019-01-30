@@ -1,0 +1,45 @@
+<h1>One Cat</h1>
+<style>
+table, td {
+  border: 1px solid black;
+}
+thead {
+  background-color: <%= @cat.color%>;
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-
+}
+.data {
+  color: <%= @cat.color%>;
+}
+</style>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2"><%= @cat.name%></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="data">Color</td>
+            <td><%= @cat.color%></td>
+        </tr>
+        <tr>
+            <td class="data">Birth date</td>
+            <td><%= @cat.birth_date%></td>
+        </tr>
+        <tr>
+            <td class="data">Sex</td>
+            <td><%= @cat.sex%></td>
+        </tr>
+        <tr>
+            <td class="data">Description</td>
+            <td><%= @cat.description%></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
